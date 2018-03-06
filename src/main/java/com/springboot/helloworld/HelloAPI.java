@@ -17,5 +17,10 @@ public class HelloAPI {
 	public String welcome() {
 		return "Welcome";
 	}
+	
+	@GetMapping("/add")
+	public String additional() {
+		return "Additional test";
+	}
 
 }
