@@ -1,7 +1,5 @@
 package com.springboot.helloworld.dao;
 
-import java.util.List;
-
 import org.springframework.boot.CommandLineRunner;
 
 public class PersonRunner implements CommandLineRunner{
@@ -19,12 +17,6 @@ public class PersonRunner implements CommandLineRunner{
 		personRepository.save(p1);
 		personRepository.save(p2);
 		personRepository.save(p3);
-		getPersons();
-	}
-
-	private void getPersons() {
-		List<Person> persons = personRepository.findAll();	
-		persons.forEach(System.out::println);
 	}
 
 }
