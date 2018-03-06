@@ -1,1 +1,0 @@
-web: java -jar target/Hello-World.jar
